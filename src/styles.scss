@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333333;
+  --light-color: #f4f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+
+  &:hover {
+    color: #666666;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1px solid #cccccc;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+table th {
+  background-color: var(--light-color);
+}
+
+.btn {
+  display: inline-block;
+  color: var(--light-color);
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transform: opacity 0.2s;
+  outline: none;
+
+  &:hover {
+    background: var(--dark-color);
+    color: #ffffff;
+  }
+
+  &:hover:not(:disabled) {
+    opacity: 0.8;
+  }
+
+  &.btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  &.btn-primary {
+    background: var(--primary-color);
+    color: #ffffff;
+  }
+
+
+}
+
+.text-center {
+  text-align: center;
+}
